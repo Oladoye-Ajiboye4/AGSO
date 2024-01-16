@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGSO</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div id="body">
+        <div id="intro">
+            <h1 id="title">Anglican Grammar School, Ogbomoso</h1>
+            <p id="description">The school with all difference</p>
+            <a href="#"><button id="shortbio" type="button">
+                Short Bio
+            </button></a>
+        </div>
+        
+        <form action="" id="survey-form">
+            <div id="form">
+                <div id="heading">
+                    <h2 id="register">Register</h2>
+                    <button type="button" id="signin">Sign In</button>
+                </div>
+
+                <div id="sect1">
+                    <label for="name" class="label" id="name-label">Name: <br> <input type="text" id="name" class="input" placeholder="Enter your name" required></label><br>
+                    <label for="email" class="label" id="email-label">Email: <br> <input type="email" id="email" class="input" placeholder="Enter your email" required>
+                    </label><br>
+                    <label for="age" class="label" id="age-label">Age (optional): <br> <input type="number" id="age" min="18" max="45" placeholder="Age" class="input" required></label>
+                </div>
+                
+                <h4 id="gender">Gender</h4>
+                <div id="sect2">
+                    <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
+                    <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
+                    <label for="custom"><input type="radio" name="gender" id="custom" value="custom"> Custom</label>
+                </div>
+                
+                <div>
+                    
+                    
+                    <label for="dropdown">Clubs you would love to join: 
+                        <select name="dropdown" id="dropdown">
+                            <option value="">Social</option>
+                        <option value="1">Press</option>
+                        <option value="2">Sports</option>
+                        </select>
+                    </label>
+                </div>
+        
+                <div>
+        
+                    <h4 id="newsletter">Newsletter Preferences</h4>
+                    <div id="checkbox">
+                        <label for="frontend"><input type="checkbox" id="frontend" value="frontend"> School news</label><br>
+                        <label for="backend"><input type="checkbox" id="backend" value="backend"> Scholarships</label><br>
+                        <label for="data-visual"><input type="checkbox" id="data-visual" value="data-visual"> Admissions</label><br>
+                        <label for="challenges"><input type="checkbox" id="challenges" value="challenges"> Quiz</label><br>
+                        <label for="videos"><input type="checkbox" id="videos" value="videos"> Videos</label>
+                    </div>  
+                </div> 
+                
+                <div>
+                    <h4 id="bio">Short description about yourself</h4>
+                    <textarea name="comment" id="comment" cols="50" rows="5" placeholder="Enter your description here..."></textarea>
+                </div>
+        
+                <input type="submit" value="Submit" id="submit">    
+            </div>
+            
+        </form>    
+    </div>
+    
+</body>
+</html>
